@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #b1aeb9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+header {
+    background: url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(221, 224, 10);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer ;
+}
+
+/* Section Styling */
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.project {
+    background: #74b2db;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #36e226;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #a09610;
+}
+/* Separation Line */
+.contact-divider {
+    width: 60%;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+}
+
+/* Contact Section Layout */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Left Side: Contact Details */
+.contact-details {
+    flex: 1;
+    text-align: left;
+    font-size: 18px;
+    padding-right: 30px;
+    border-right: 2px solid #ddd; /* Adds the separation line */
+    padding-bottom: 20px; /* Adds some space at the bottom */
+}
+
+.contact-details p {
+    margin: 10px 0;
+}
+
+.contact-details a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Right Side: Contact Form */
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Separation Line */
+.contact-divider {
+    width: 60%;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+}
+
+/* Make it Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-details {
+        padding-right: 0;
+        margin-bottom: 20px;
+        border-right: none; /* Remove border on smaller screens */
+    }
+}
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+}
